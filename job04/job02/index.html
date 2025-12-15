@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job 02</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+
+<header>
+    <button class="burger" id="burger">☰</button>
+    <nav id="nav-menu">
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Présentation</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+    document.getElementById("burger").addEventListener("click", () => {
+        document.getElementById("nav-menu").classList.toggle("active");
+    });
+</script>
+
+</body>
+</html>

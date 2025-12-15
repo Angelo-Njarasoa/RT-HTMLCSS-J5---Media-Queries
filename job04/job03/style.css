@@ -1,0 +1,108 @@
+/* Reset simple */
+* 
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+    background-color: #222;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+/* NAV */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HAMBURGER */
+.burger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Sections */
+section {
+    background-color: #88c1d0;
+    height: 150px;
+    flex: 1;
+}
+
+/* 🖥️ Desktop large (≥ 1600px) */
+@media (min-width: 1600px) {
+    .container {
+        flex-direction: row;
+    }
+}
+
+/* 💻 Tablette (768px → 1599px) */
+@media (max-width: 1599px) and (min-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    section {
+        flex: 0 0 48%;
+    }
+}
+
+/* 📱 Mobile (≤ 767px) */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+}
+@media (max-width: 767px) {
+
+    /* Affiche le hamburger */
+    .burger {
+        display: block;
+    }
+
+    /* Cache le menu par défaut */
+    nav {
+        display: none;
+        width: 100%;
+    }
+
+    /* Menu visible quand actif */
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 15px;
+        gap: 10px;
+    }
+}

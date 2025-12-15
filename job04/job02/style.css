@@ -1,0 +1,45 @@
+body {
+    background-color: #88c1d0;
+}
+
+@media (min-width:1680px) and (max-width:1920px) {
+    body { background-color: #ffca4b; }
+}
+
+@media (min-width:1280px) and (max-width:1679px) {
+    body { background-color: #275fa0; }
+}
+
+@media (max-width:1279px) {
+    body { background-color: #ffffff; }
+}
+/* 📱 Mobile (≤ 767px) */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+    }
+}
+@media (max-width: 767px) {
+
+    /* Affiche le hamburger */
+    .burger {
+        display: block;
+    }
+
+    /* Cache le menu par défaut */
+    nav {
+        display: none;
+        width: 100%;
+    }
+
+    /* Menu visible quand actif */
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 15px;
+        gap: 10px;
+    }
+}
